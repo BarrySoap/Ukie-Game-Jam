@@ -15,9 +15,9 @@ public class EndZone : MonoBehaviour
 	private BoxCollider2D endCollider;
 
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
-		endCollider = gameObject.GetComponent<BoxCollider2D> ();
+		endCollider = gameObject.GetComponent<BoxCollider2D>();
 		activationTimer = Countdown -= Time.deltaTime;
 
 		if (SceneToLoad == null)
@@ -25,13 +25,18 @@ public class EndZone : MonoBehaviour
 	}
 
 	//get activated by collision
-	public void Activate ()
+	public void Activate()
 	{
-		Debug.Log ("Activate");
+		Debug.Log("Activate");
 		activated = true;
 	}
 
-	void Update ()
+	public void InstantSwitch()
+	{
+		SceneManager.LoadScene(SceneToLoad);
+	}
+
+	void Update()
 	{
 		//decrement the timer if activated.
 		if (activated)
@@ -45,7 +50,7 @@ public class EndZone : MonoBehaviour
 		//if timer runs out 
 		if (activationTimer <= 0)
 		{
-			SceneManager.LoadScene (SceneToLoad);
+			SceneManager.LoadScene(SceneToLoad);
 		}
 	}
 }
