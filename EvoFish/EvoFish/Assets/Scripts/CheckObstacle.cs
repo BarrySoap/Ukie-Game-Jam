@@ -10,7 +10,7 @@ public class CheckObstacle : MonoBehaviour {
         if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Enemy")
         {
             //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Collision detected by tag");
+            Debug.Log("Player collided with obstacle/enemy");
         }
     }
 

@@ -1,7 +1,21 @@
 fileFormatVersion: 2
 guid: f3f7d3f315888c94b8841f7757cf9547
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: wings_grow_1
+    21300002: wings_grow_2
+    21300004: wings_stand
+    21300006: wings_walk_1
+    21300008: wings_walk_2
+    21300010: wings_walk_3
+    21300012: wings_walk_4
+    21300014: wings_walk_5
+    21300016: wings_dead_1
+    21300018: wings_dead_2
+    21300020: wings_dash_1
+    21300022: wings_dash_2
+    21300024: wings_dash_3
+    21300026: wings_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +54,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,10 +74,21 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,7 +96,267 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wings_grow_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 107
+        width: 391
+        height: 604
+      alignment: 9
+      pivot: {x: 0.44600984, y: -0.00065970264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e77c7c9165acdc44a91a4083fa972e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_grow_2
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 100
+        width: 543
+        height: 609
+      alignment: 9
+      pivot: {x: 0.6168885, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877f6322d41218d4c852e2e801dacc07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_stand
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 96
+        width: 655
+        height: 716
+      alignment: 9
+      pivot: {x: 0.67609787, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389e2ccafb8256a4fbe4d69990c64994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_walk_1
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 106
+        width: 706
+        height: 699
+      alignment: 9
+      pivot: {x: 0.62536895, y: -0.0012662612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7ae55273cf74345a249b38cb363736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_walk_2
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 99
+        width: 689
+        height: 686
+      alignment: 9
+      pivot: {x: 0.63360053, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ff2cb2b0bf16d49921985b5d46d921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_walk_3
+      rect:
+        serializedVersion: 2
+        x: 3791
+        y: 104
+        width: 663
+        height: 750
+      alignment: 9
+      pivot: {x: 0.66553986, y: 0.0011800944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38740a3a2d7971c48aafcdced7f30f03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_walk_4
+      rect:
+        serializedVersion: 2
+        x: 4646
+        y: 107
+        width: 599
+        height: 746
+      alignment: 9
+      pivot: {x: 0.62412125, y: -0.0011864629}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2ef8bcb4491ea4eb4456bf372953e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_walk_5
+      rect:
+        serializedVersion: 2
+        x: 5442
+        y: 104
+        width: 653
+        height: 723
+      alignment: 9
+      pivot: {x: 0.52168626, y: -0.001225916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8978c106c1c76334392bf99ec93242a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_dead_1
+      rect:
+        serializedVersion: 2
+        x: 6435
+        y: 87
+        width: 839
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5991653, y: 0.0043529696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec61b6c5fb889d9438319bcf92cdc36e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_dead_2
+      rect:
+        serializedVersion: 2
+        x: 7542
+        y: 84
+        width: 607
+        height: 345
+      alignment: 9
+      pivot: {x: 0.83975124, y: 0.02565531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906b2a28256dd07419f6e94bb5f223e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_dash_1
+      rect:
+        serializedVersion: 2
+        x: 8393
+        y: 96
+        width: 691
+        height: 694
+      alignment: 9
+      pivot: {x: 0.70214, y: 0.0056694974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c555224ed86b33f43bc2b3b98ddb69f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_dash_2
+      rect:
+        serializedVersion: 2
+        x: 9152
+        y: 102
+        width: 714
+        height: 694
+      alignment: 9
+      pivot: {x: 0.68460727, y: -0.00566941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5c4659878680f4796f9a63b0b4f889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wings_dash_3
+      rect:
+        serializedVersion: 2
+        x: 10047
+        y: 113
+        width: 633
+        height: 653
+      alignment: 9
+      pivot: {x: 0.30109596, y: 0.000000058418028}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80900b0f799620408065acb2f159e49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: f91a2c62872360f4793a6b62c5afe919
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fish walks finished_0
+    21300002: fish walks finished_1
+    21300004: fish walks finished_2
+    21300006: long walks finished_0
+    21300008: long walks finished_1
+    21300010: long walks finished_2
+    21300012: wing walks finished_0
+    21300014: wing walks finished_1
+    21300016: wing walks finished_2
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fish walks finished_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 65
+        width: 351
+        height: 497
+      alignment: 9
+      pivot: {x: 0.49144614, y: 0.0042818096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5f6eee3f88af04fb90738f8c171627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish walks finished_1
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 58
+        width: 347
+        height: 541
+      alignment: 9
+      pivot: {x: 0.49984345, y: 0.0042344197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b91f51b0572894c867f2047ae03e97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish walks finished_2
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 65
+        width: 340
+        height: 490
+      alignment: 9
+      pivot: {x: 0.4870645, y: -0.000093358874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375c6a84b1528f74699106b5a32665d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: long walks finished_0
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 56
+        width: 332
+        height: 531
+      alignment: 9
+      pivot: {x: 0.52101445, y: -0.004899314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80acc7e6cf193e243897fa1dccac9b2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: long walks finished_1
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 59
+        width: 391
+        height: 649
+      alignment: 9
+      pivot: {x: 0.5225165, y: 0.0011080961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051ca999784f1204dabc232232d4bcc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: long walks finished_2
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 60
+        width: 387
+        height: 584
+      alignment: 9
+      pivot: {x: 0.49506167, y: 0.0032723374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd0b8c3354241444b95ecb71290afd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wing walks finished_0
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 54
+        width: 585
+        height: 651
+      alignment: 9
+      pivot: {x: 0.6829402, y: -0.0029356116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1b15535c604634d81192537bfdf20b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wing walks finished_1
+      rect:
+        serializedVersion: 2
+        x: 3855
+        y: 54
+        width: 593
+        height: 761
+      alignment: 9
+      pivot: {x: 0.66758174, y: 0.0025112538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2a3da03aaf7964b80331ef4fecb6b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wing walks finished_2
+      rect:
+        serializedVersion: 2
+        x: 4504
+        y: 70
+        width: 586
+        height: 705
+      alignment: 9
+      pivot: {x: 0.66306096, y: -0.000000010821836}
+      border: {x: 0, y: 2, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f019226f5a1343146889d3c7a5d0d5c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 86852790c76b1b041a7444f464299249
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

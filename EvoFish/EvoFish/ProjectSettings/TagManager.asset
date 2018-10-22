@@ -7,6 +7,7 @@ TagManager:
   - Platform
   - Obstacle
   - End
+  - Enemy
   layers:
   - Default
   - TransparentFX
