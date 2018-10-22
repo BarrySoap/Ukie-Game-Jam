@@ -279,6 +279,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 5
   runSpeed: 4
+  dashMultiplier: 3
+  dashDuration: 0.1
+  dashCooldown: 0.5
 --- !u!1 &1407599016
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +445,7 @@ GameObject:
   - component: {fileID: 1903708713}
   m_Layer: 0
   m_Name: New Sprite (1)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11,7 +11,12 @@ public class PlayerController : MonoBehaviour
 	[SerializeField]
 	private float runSpeed = 20;
 
+	public float dashMultiplier = 2;
+	public float dashDuration = 1;
+	public float dashCooldown = 0.5f;
+
 	private bool isGrounded;
+	private float dashTimer;
 
 	// Use this for initialization
 	void Start ()
@@ -27,6 +32,10 @@ public class PlayerController : MonoBehaviour
 
 		//jump logic
 		JumpInputs ();
+
+		//dash logic
+		DashInputs ();
+		dashTimer -= Time.deltaTime;
 	}
 
 	//set player to grounded to allow them to jump when colliding with floor
@@ -44,7 +53,7 @@ public class PlayerController : MonoBehaviour
 	{
 		Debug.Log ("Jumping");
 
-		if (col.gameObject.name == "Ground")
+		if (col.gameObject.tag == "Platform")
 		{
 			isGrounded = false;
 		}
@@ -68,6 +77,29 @@ public class PlayerController : MonoBehaviour
 		playerBody.velocity = new Vector2 (playerBody.velocity.x, jumpForce);
 	}
 
+	void DashInputs ()
+	{
+		//if dash cooled down allow another dash
+		if (dashTimer <= 0)
+		{
+			if (Input.GetAxis ("Fire1") != 0)
+			{
+				StartCoroutine (Dash ());
+				dashTimer = dashCooldown;
+			}
+		}
+
+	}
+
+	//coroutine to do dash actions over a period of time
+	IEnumerator Dash ()
+	{
+		runSpeed = runSpeed * dashMultiplier;
+		yield return new WaitForSeconds (dashDuration);
+		runSpeed = runSpeed / dashMultiplier;
+	}
+
+	//constantly moving
 	void MoveRight ()
 	{
 		playerBody.velocity = new Vector2 (runSpeed, playerBody.velocity.y);
