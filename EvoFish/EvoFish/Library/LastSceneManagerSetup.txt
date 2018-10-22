@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level1.unity
+- path: Assets/Scenes/Tim - ImageLoad.unity
   isLoaded: 1
   isActive: 1
