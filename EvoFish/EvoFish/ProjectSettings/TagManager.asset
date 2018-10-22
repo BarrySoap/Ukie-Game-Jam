@@ -43,3 +43,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3744379783
+    locked: 0
+  - name: Bushes
+    uniqueID: 2894492291
+    locked: 0
+  - name: Terrain
+    uniqueID: 412628343
+    locked: 0
+  - name: Obstacle
+    uniqueID: 55652275
+    locked: 0
+  - name: Enemy
+    uniqueID: 1942775673
+    locked: 0
+  - name: Player
+    uniqueID: 3064004549
+    locked: 0
+  - name: Foreground
+    uniqueID: 3377650827
+    locked: 0

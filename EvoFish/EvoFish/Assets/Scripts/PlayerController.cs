@@ -85,7 +85,6 @@ public class PlayerController : MonoBehaviour
 
 	void HoldJump ()
 	{
-		Debug.Log (holdJumpTimer);
 		if (holdJumpTimer > 0)
 			playerBody.velocity += new Vector2 (playerBody.velocity.x, holdMultiplier * jumpForce) * Time.deltaTime;
 	}
