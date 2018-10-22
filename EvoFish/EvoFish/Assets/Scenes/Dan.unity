@@ -282,6 +282,7 @@ MonoBehaviour:
   dashMultiplier: 3
   dashDuration: 0.1
   dashCooldown: 0.5
+  holdJumpCooldown: 0.1
 --- !u!1 &1407599016
 GameObject:
   m_ObjectHideFlags: 0
