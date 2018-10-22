@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BirdBehaviour : MonoBehaviour {
 
-    Vector3 _birdMovement = new Vector3(-1.0f, 0.0f, 0.0f);
-    float timer = 0;
-    bool detected = false;
-    float _diffDisty = 0;
-    float pos = 0;
+    private Vector3 _birdMovement = new Vector3(-1.0f, 0.0f, 0.0f);
+    private float _cycleTimer = 0;
+    private bool detected = false;
+    private float _diffDisty = 0;
+    private float pos = 0;
 
     // Use this for initialization
     void Start () {
@@ -19,16 +19,21 @@ public class BirdBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         // Get difference in difference between attached object and the player (x axis)
-        float _diffDistx = Mathf.Abs(GameObject.Find("Player").transform.position.x - gameObject.transform.position.x);
-        if (_diffDistx <= 5.0f || _diffDistx >= 5.0f)
-        {
-            timer += Time.deltaTime;
-            // Cat detects the player
+        float _diffDistx = gameObject.transform.position.x - GameObject.Find("Player").transform.position.x;
+        print(_cycleTimer);
+        if (_diffDistx <= 5.0f) {
+            detected = true;
+        }
+        if (_cycleTimer > 8.0f) {
+            detected = false;
+        }
+        if (detected) {
+            _cycleTimer += Time.deltaTime;
             transform.Translate(-1.0f * Time.deltaTime, 0.0f, 0.0f);
             Vector3 swoop = transform.position;
-            swoop.y = pos + ((Mathf.Cos(timer * Mathf.PI / 4.0f) - 1) / 2) * _diffDisty;
+            swoop.y = pos + ((Mathf.Cos(_cycleTimer * Mathf.PI / 4.0f) - 1) / 2) * _diffDisty;
             transform.position = swoop;
-            print(timer);
+            detected = false;
         }
     }
 }
