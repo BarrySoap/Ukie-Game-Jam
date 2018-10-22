@@ -63,6 +63,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BirdBehaviour.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\CatBehaviour.cs" />
+    <Compile Include="Assets\Scripts\CheckCollEnemy.cs" />
     <Compile Include="Assets\Scripts\CheckObstacle.cs" />
     <Compile Include="Assets\Scripts\GroundBlock.cs" />
     <Compile Include="Assets\Scripts\MoveCube.cs" />
