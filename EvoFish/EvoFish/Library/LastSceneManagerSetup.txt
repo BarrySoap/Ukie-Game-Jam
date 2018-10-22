@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Emma.unity
+=======
+- path: Assets/Scenes/Level1.unity
+>>>>>>> 70ef1b6d05cd74ca31fb417493d9e57c5db201df
   isLoaded: 1
   isActive: 1
