@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
 
 	void DashInputs ()
 	{
+		//if dash cooled down allow another dash
 		if (dashTimer <= 0)
 		{
 			if (Input.GetAxis ("Fire1") != 0)
@@ -89,6 +90,8 @@ public class PlayerController : MonoBehaviour
 		}
 
 	}
+
+	//coroutine to do dash actions over a period of time
 	IEnumerator Dash ()
 	{
 		runSpeed = runSpeed * dashMultiplier;
@@ -96,6 +99,7 @@ public class PlayerController : MonoBehaviour
 		runSpeed = runSpeed / dashMultiplier;
 	}
 
+	//constantly moving
 	void MoveRight ()
 	{
 		playerBody.velocity = new Vector2 (runSpeed, playerBody.velocity.y);
