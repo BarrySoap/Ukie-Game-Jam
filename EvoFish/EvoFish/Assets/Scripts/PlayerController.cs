@@ -30,50 +30,50 @@ public class PlayerController : MonoBehaviour
 	private Vector2 defaultOrigin;
 
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
-		playerBody = gameObject.GetComponent<Rigidbody2D> ();
-		playerCollider = gameObject.GetComponent<BoxCollider2D> ();
+		playerBody = gameObject.GetComponent<Rigidbody2D>();
+		playerCollider = gameObject.GetComponent<BoxCollider2D>();
 		defaultSize = playerCollider.size.y;
 		defaultOrigin = playerCollider.offset;
-		Debug.Log (defaultSize + ", " + defaultOrigin);
+		Debug.Log(defaultSize + ", " + defaultOrigin);
 
 	}
 
 	// Update is called once per frame
-	void Update ()
+	void Update()
 	{
 		//constant movement
-		MoveRight ();
+		MoveRight();
 
 		//jump logic
-		JumpInputs ();
+		JumpInputs();
 		holdJumpTimer -= Time.deltaTime;
 
 		//dash logic
-		DashInputs ();
+		DashInputs();
 		dashTimer -= Time.deltaTime;
 
 		//Duck logic
-		DuckInputs ();
+		DuckInputs();
 
 	}
 
 	//set player to grounded to allow them to jump when colliding with floor
-	private void OnCollisionEnter2D (Collision2D col)
+	private void OnCollisionEnter2D(Collision2D col)
 	{
-		Debug.Log ("Collided with " + col.gameObject.name);
+		Debug.Log("Collided with " + col.gameObject.name);
 		if (col.gameObject.tag == "Platform")
 		{
-			anim.SetBool ("jump", false);
+			anim.SetBool("jump", false);
 			isGrounded = true;
 		}
 	}
 
 	//when character is jumping it will exit collision and no longer be grounded
-	private void OnCollisionExit2D (Collision2D col)
+	private void OnCollisionExit2D(Collision2D col)
 	{
-		Debug.Log ("Jumping");
+		Debug.Log("Jumping");
 
 		if (col.gameObject.tag == "Platform")
 		{
@@ -84,88 +84,89 @@ public class PlayerController : MonoBehaviour
 	}
 
 	//take jump inputs
-	void JumpInputs ()
+	void JumpInputs()
 	{
-		if (Input.GetAxis ("Jump") > 0)
+		if (Input.GetAxis("Jump") > 0)
 		{
-			anim.SetBool ("jump", true);
+			anim.SetBool("jump", true);
 			if (isGrounded)
 			{
-				Jump ();
+				Jump();
 			}
 			else
-				HoldJump ();
+				HoldJump();
 		}
 	}
 
 	//physical jump
-	void Jump ()
+	void Jump()
 	{
-		playerBody.velocity = new Vector2 (playerBody.velocity.x, jumpForce);
+		playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
 	}
 
-	void HoldJump ()
+	void HoldJump()
 	{
 		if (holdJumpTimer > 0)
-			playerBody.velocity += new Vector2 (playerBody.velocity.x, holdMultiplier * jumpForce) * Time.deltaTime;
+			playerBody.velocity += new Vector2(playerBody.velocity.x, holdMultiplier * jumpForce) * Time.deltaTime;
 	}
 
-	void DashInputs ()
+	void DashInputs()
 	{
 		//if dash cooled down allow another dash
 		if (dashTimer <= 0)
 		{
-			if (Input.GetAxis ("Fire1") > 0)
+			if (Input.GetAxis("Fire1") > 0)
 			{
-				StartCoroutine (Dash ());
+				StartCoroutine(Dash());
 				dashTimer = dashCooldown;
 			}
 		}
 	}
 
 	//coroutine to do dash actions over a period of time
-	IEnumerator Dash ()
+	IEnumerator Dash()
 	{
-		anim.SetBool ("dash", true);
+		anim.SetBool("dash", true);
 		runSpeed = runSpeed * dashMultiplier;
-		yield return new WaitForSeconds (dashDuration);
-		anim.SetBool ("dash", false);
+		yield return new WaitForSeconds(dashDuration);
+		anim.SetBool("dash", false);
 		runSpeed = runSpeed / dashMultiplier;
 	}
 
-	void DuckInputs ()
+	void DuckInputs()
 	{
-		if (Input.GetAxis ("Horizontal") < 0)
+		if (Input.GetAxis("Vertical") < 0)
 		{
-			Duck (true);
+			anim.SetBool("duck", true);
+			Duck(true);
 		}
 		else
 		{
-			Duck (false);
+			anim.SetBool("duck", false);
+			Duck(false);
 		}
 	}
 
-	void Duck (bool ducking)
+	void Duck(bool ducking)
 	{
 		if (ducking)
 		{
-			playerCollider.size = new Vector2 (playerCollider.size.x, playerCollider.size.y / 2);
-			playerCollider.offset = new Vector2 (0, -playerCollider.bounds.size.y / 2);
-			Debug.Log ("Ducked: " + playerCollider.size + ", " + playerCollider.offset);
-
+			//shrink and lower hitbox for duck action
+			playerCollider.size = new Vector2(playerCollider.size.x, defaultSize / 2);
+			playerCollider.offset = new Vector2(0, defaultOrigin.y - (defaultSize / 5));
 		}
 		else
 		{
-			playerCollider.size = playerCollider.size = new Vector2 (playerCollider.size.x, defaultSize);
+			//restet hitbox to default values
+			playerCollider.size = playerCollider.size = new Vector2(playerCollider.size.x, defaultSize);
 			playerCollider.offset = defaultOrigin;
-			Debug.Log ("Up: " + playerCollider.size + ", " + playerCollider.offset);
 		}
 
 	}
 
 	//constantly moving
-	void MoveRight ()
+	void MoveRight()
 	{
-		playerBody.velocity = new Vector2 (runSpeed, playerBody.velocity.y);
+		playerBody.velocity = new Vector2(runSpeed, playerBody.velocity.y);
 	}
 }

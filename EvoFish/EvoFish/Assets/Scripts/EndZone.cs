@@ -18,7 +18,7 @@ public class EndZone : MonoBehaviour
 	void Start()
 	{
 		endCollider = gameObject.GetComponent<BoxCollider2D>();
-		activationTimer = Countdown -= Time.deltaTime;
+		activationTimer = Countdown;
 
 		if (SceneToLoad == null)
 			SceneToLoad = "Dan";
