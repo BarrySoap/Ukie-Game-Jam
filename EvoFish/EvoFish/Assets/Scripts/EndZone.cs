@@ -18,10 +18,16 @@ public class EndZone : MonoBehaviour
 	void Start ()
 	{
 		endCollider = gameObject.GetComponent<BoxCollider2D> ();
-		activationTimer = Countdown -= Time.deltaTime;
+		activationTimer = Countdown;
 
 		if (SceneToLoad == null)
 			SceneToLoad = "Dan";
+
+        if(SceneManager.GetActiveScene().name == "Level1")
+        {
+            // Change to say level 2 --------------------------------
+            SceneToLoad = "Level1";
+        }
 	}
 
 	//get activated by collision

@@ -57,3 +57,4 @@ MonoBehaviour:
   thorns: {fileID: 4447123449110284, guid: eec26d28786a6ca4e9f96e59652f35c0, type: 2}
   bird: {fileID: 0}
   cat: {fileID: 0}
+  end: {fileID: 4244921150502976, guid: 14039a94c89389342a7f6b6b86acb6ba, type: 2}
