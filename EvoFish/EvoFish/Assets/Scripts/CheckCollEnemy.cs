@@ -7,10 +7,10 @@ public class CheckCollEnemy : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collision)
     {
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
-        if (collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Platform")
         {
-            //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Player collided with obstacle");
+            Vector3 pos = gameObject.transform.position;
+            GameObject.Find("Cat").GetComponent<CatBehaviour>().SetPos(pos);
         }
     }
 

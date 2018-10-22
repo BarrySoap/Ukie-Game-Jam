@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CatBehaviour : MonoBehaviour
 {
-
     private float _moveSpeed = 1.3f;
     private bool _detected = false;
     private float _frequency = 1.02f;  // Speed of sine movement
@@ -15,6 +14,13 @@ public class CatBehaviour : MonoBehaviour
     private bool catJumped = false;
     private float _cycleTimer = 0;
     private float oriY = 0;
+    private bool awake = true;
+
+    public void SetPos(Vector3 newPos)
+    {
+        _pos = newPos;
+        awake = false;
+    }
 
     // Use this for initialization
     void Start()
@@ -27,20 +33,23 @@ public class CatBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _diffDistX = gameObject.transform.position.x - GameObject.Find("Player").transform.position.x;
-        if (!catJumped && _diffDistX <= 5.0f)
+        if (awake)
         {
-            _detected = true;
-            _magnitude = Mathf.Abs(GameObject.Find("Player").transform.position.x - gameObject.transform.position.x);
-            catJumped = true;
-        }
+            _diffDistX = gameObject.transform.position.x - GameObject.Find("Player").transform.position.x;
+            if (!catJumped && _diffDistX <= 5.0f)
+            {
+                _detected = true;
+                _magnitude = Mathf.Abs(GameObject.Find("Player").transform.position.x - gameObject.transform.position.x);
+                catJumped = true;
+            }
 
-        if (_detected)
-        {
-            _cycleTimer += Time.deltaTime;
-            _pos.y -= (oriY * Time.deltaTime * _moveSpeed);
-            //_pos.y -= (1.0f * Time.deltaTime * _moveSpeed);
-            transform.position = _pos + _axis * Mathf.Sin((Mathf.PI/2.0f) * _cycleTimer * _frequency) * _magnitude;
+            if (_detected)
+            {
+                _cycleTimer += Time.deltaTime;
+                _pos.y -= (oriY * Time.deltaTime * _moveSpeed);
+                //_pos.y -= (1.0f * Time.deltaTime * _moveSpeed);
+                transform.position = _pos + _axis * Mathf.Sin((Mathf.PI / 2.0f) * _cycleTimer * _frequency) * _magnitude;
+            }
         }
     }
 }
