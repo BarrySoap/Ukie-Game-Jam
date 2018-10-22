@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class empty : MonoBehaviour {
+public class emptysprite : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
