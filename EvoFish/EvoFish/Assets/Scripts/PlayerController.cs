@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 	{
 		Debug.Log ("Jumping");
 
-		if (col.gameObject.name == "Ground")
+		if (col.gameObject.tag == "Platform")
 		{
 			isGrounded = false;
 		}
