@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
 		//if dash cooled down allow another dash
 		if (dashTimer <= 0)
 		{
-			if (Input.GetAxis ("Fire1") != 0)
+			if (Input.GetAxis ("Fire1") > 0)
 			{
 				StartCoroutine (Dash ());
 				dashTimer = dashCooldown;
