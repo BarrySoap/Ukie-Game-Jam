@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1913255509382864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.85, y: -0.25, z: -1.62}
+  m_LocalPosition: {x: 0, y: 0.98, z: -1.62}
   m_LocalScale: {x: 5, y: 5, z: 0}
   m_Children:
   - {fileID: 4684079867736818}
@@ -69,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1510991401177284}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.075, y: -0.144, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.04634, y: 0.04634, z: 0}
   m_Children: []
   m_Father: {fileID: 4172591412555508}
@@ -107,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06819478, y: -0.05234836}
+  m_Offset: {x: 0, y: 0.09}
   m_SpriteTilingProperty:
     border: {x: 0.10999999, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -149,13 +149,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001c14db0c9f7b44380b8f6cdea2c192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 5
+  anim: {fileID: 95971757169061622}
+  jumpForce: 6
   runSpeed: 4.5
   dashMultiplier: 2
-  dashDuration: 1
+  dashDuration: 0.2
   dashCooldown: 0.5
   holdJumpCooldown: 0.2
-  holdMultiplier: 4
+  holdMultiplier: 1.5
 --- !u!114 &114333244678794452
 MonoBehaviour:
   m_ObjectHideFlags: 1

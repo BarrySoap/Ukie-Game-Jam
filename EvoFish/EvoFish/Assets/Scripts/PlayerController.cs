@@ -20,10 +20,7 @@ public class PlayerController : MonoBehaviour
 	public float holdJumpCooldown = 0.2f;
 	public float holdMultiplier = 4;
 
-    //Duck
-    public float duckMultiplier = 2;
-    public float duckDuration = 1;
-    public float duckCooldown = 0.5f;
+    private bool isGrounded;
 
 	private float dashTimer = 0;
 	private float holdJumpTimer = 0;

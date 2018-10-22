@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ed5e5d4625997449cefb55c0c80491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridScale: 0.5
+  gridScale: 1
   world: {fileID: 2800000, guid: a73b41d6720a06e4db33fff81dcc47c0, type: 3}
   player: {fileID: 278835180}
   thorns: {fileID: 4447123449110284, guid: eec26d28786a6ca4e9f96e59652f35c0, type: 2}
@@ -342,16 +342,6 @@ Prefab:
     - target: {fileID: 4172591412555508, guid: d2afa0a223aa4e845a1cd4b68667e8a2, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114037533481117108, guid: d2afa0a223aa4e845a1cd4b68667e8a2,
-        type: 2}
-      propertyPath: holdMultiplier
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114037533481117108, guid: d2afa0a223aa4e845a1cd4b68667e8a2,
-        type: 2}
-      propertyPath: dashDuration
-      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2afa0a223aa4e845a1cd4b68667e8a2, type: 2}
