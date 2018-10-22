@@ -194,10 +194,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1492901184532204, guid: d4d32b700da17284fa2f816c9e9d72f9, type: 2}
-      propertyPath: m_Name
-      value: Main Camera
-      objectReference: {fileID: 0}
     - target: {fileID: 114855404699241846, guid: d4d32b700da17284fa2f816c9e9d72f9,
         type: 2}
       propertyPath: player
