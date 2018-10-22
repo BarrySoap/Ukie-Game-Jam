@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Tim - ImageLoad.unity
+=======
+- path: Assets/Scenes/Emma.unity
+>>>>>>> origin/Animation
   isLoaded: 1
   isActive: 1

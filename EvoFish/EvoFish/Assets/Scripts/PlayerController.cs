@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //Animation
+    [SerializeField]
+    private Animator anim;
 
 	Rigidbody2D playerBody;
 	[SerializeField]
@@ -17,7 +20,11 @@ public class PlayerController : MonoBehaviour
 	public float holdJumpCooldown = 0.2f;
 	public float holdMultiplier = 4;
 
-	private bool isGrounded;
+    //Duck
+    public float duckMultiplier = 2;
+    public float duckDuration = 1;
+    public float duckCooldown = 0.5f;
+
 	private float dashTimer = 0;
 	private float holdJumpTimer = 0;
 
@@ -48,7 +55,8 @@ public class PlayerController : MonoBehaviour
 		Debug.Log ("Collided with " + col.gameObject.name);
 		if (col.gameObject.tag == "Platform")
 		{
-			isGrounded = true;
+            anim.SetBool("jump", false);
+            isGrounded = true;
 		}
 	}
 
@@ -70,10 +78,13 @@ public class PlayerController : MonoBehaviour
 	{
 		if (Input.GetAxis ("Jump") > 0)
 		{
-			if (isGrounded)
-				Jump ();
-			else
-				HoldJump ();
+            anim.SetBool("jump", true);
+            if (isGrounded)
+            {
+                Jump();
+            }
+            else
+                HoldJump();
 		}
 	}
 
@@ -105,8 +116,10 @@ public class PlayerController : MonoBehaviour
 	//coroutine to do dash actions over a period of time
 	IEnumerator Dash ()
 	{
+        anim.SetBool("dash", true);
 		runSpeed = runSpeed * dashMultiplier;
 		yield return new WaitForSeconds (dashDuration);
+        anim.SetBool("dash", false);
 		runSpeed = runSpeed / dashMultiplier;
 	}
 
