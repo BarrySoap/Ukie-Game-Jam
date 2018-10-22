@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefab\emptyprefab.cs" />
+    <Compile Include="Assets\Scripts\BirdBehaviour.cs" />
     <Compile Include="Assets\Scripts\CheckObstacle.cs" />
     <Compile Include="Assets\Scripts\empty.cs" />
     <Compile Include="Assets\Scripts\MoveCube.cs" />

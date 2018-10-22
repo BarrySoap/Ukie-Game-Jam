@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveCube : MonoBehaviour {
 
-    Vector3 vector = new Vector3(1.0f, 0.0f, 0.0f);
+    Vector3 _movement = new Vector3(1.0f, 0.0f, 0.0f);
 
     // Use this for initialization
     void Start () {
@@ -13,12 +13,12 @@ public class MoveCube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(vector * Time.deltaTime);
+        transform.Translate(_movement * Time.deltaTime);
 
         // Debugging purposes. Had to check multiple collisions.
         if (Input.GetKeyDown("space"))
         {
-            vector *= -1;
+            _movement *= -1;
         }
     }
 }
