@@ -61,9 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GroundBlock.cs" />
-    <Compile Include="Assets\Prefab\emptyprefab.cs" />
-    <Compile Include="Assets\Scripts\empty.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\GroundBlock.cs" />
     <Compile Include="Assets\Sprites\emptysprite.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/tssan/Documents/ukiejam/EvoFish/EvoFish/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
