@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CatBehaviour : MonoBehaviour
 {
+    //For Animation
+    [SerializeField]
+    private Animator anim;
+
     private float _moveSpeed = 1.3f;
     private bool _detected = false;
     private float _frequency = 1.02f;  // Speed of sine movement
@@ -45,6 +49,7 @@ public class CatBehaviour : MonoBehaviour
 
             if (_detected)
             {
+                anim.SetBool("Attack", true);
                 _cycleTimer += Time.deltaTime;
                 _pos.y -= (oriY * Time.deltaTime * _moveSpeed);
                 //_pos.y -= (1.0f * Time.deltaTime * _moveSpeed);
