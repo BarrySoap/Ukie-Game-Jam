@@ -36,7 +36,10 @@ public class EndZone : MonoBehaviour
     public void Activate()
     {
         Debug.Log("Activate");
-        anim.SetBool("victory", true);
+        if (anim != null)
+        {
+            anim.SetBool("victory", true);
+        }
         activated = true;
     }
 

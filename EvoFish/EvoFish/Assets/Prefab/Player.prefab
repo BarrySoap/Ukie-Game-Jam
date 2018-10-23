@@ -256,6 +256,7 @@ MonoBehaviour:
   holdJumpCooldown: 0.2
   holdMultiplier: 1.5
   moving: 1
+  isGrounded: 0
 --- !u!114 &114333244678794452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26f0b38c1391fb47ac1cbad5e628c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cf: {fileID: 0}
+  cf: {fileID: 114855404699241846, guid: d4d32b700da17284fa2f816c9e9d72f9, type: 2}
 --- !u!114 &114617622750429222
 MonoBehaviour:
   m_ObjectHideFlags: 1
