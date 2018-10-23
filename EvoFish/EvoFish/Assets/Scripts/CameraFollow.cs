@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
 
     private Vector3 baseLevel = new Vector3(0.0f, 0.0f, 0.0f);
     // Use this for initialization
-    void Awake()
+    void Start()
     {
         baseLevel = transform.position;
         baseLevel.x = player.position.x + 5;
