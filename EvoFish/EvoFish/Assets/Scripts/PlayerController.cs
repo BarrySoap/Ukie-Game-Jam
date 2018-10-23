@@ -173,4 +173,10 @@ public class PlayerController : MonoBehaviour
 		else
 			playerBody.velocity = new Vector2(0, playerBody.velocity.y);
 	}
+
+    public void KillFish()
+    {
+        moving = false;
+        anim.SetBool("dead", true);
+    }
 }

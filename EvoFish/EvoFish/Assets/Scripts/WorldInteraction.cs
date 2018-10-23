@@ -31,8 +31,8 @@ public class WorldInteraction : MonoBehaviour
 			e.Activate();
 
 			//simulate death animation
-			playerCollider.enabled = false;
-			gameObject.GetComponent<PlayerController>().moving = false;
+			//playerCollider.enabled = false;
+			gameObject.GetComponent<PlayerController>().KillFish();
 		}
 	}
 }
