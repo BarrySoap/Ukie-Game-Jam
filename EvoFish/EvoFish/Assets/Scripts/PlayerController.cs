@@ -209,4 +209,10 @@ public class PlayerController : MonoBehaviour
 				break;
 		}
 	}
+
+    public void KillFish()
+    {
+        moving = false;
+        anim.SetBool("dead", true);
+    }
 }
