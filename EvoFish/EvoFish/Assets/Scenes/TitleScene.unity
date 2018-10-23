@@ -846,6 +846,16 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9aaa5e751c828854680b1d4a5fc34f4d, type: 2}
+    - target: {fileID: 61199645822979928, guid: d2afa0a223aa4e845a1cd4b68667e8a2,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.034026474
+      objectReference: {fileID: 0}
+    - target: {fileID: 61199645822979928, guid: d2afa0a223aa4e845a1cd4b68667e8a2,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.19941863
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2afa0a223aa4e845a1cd4b68667e8a2, type: 2}
   m_IsPrefabAsset: 0
