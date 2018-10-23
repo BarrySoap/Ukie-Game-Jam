@@ -21,9 +21,9 @@ public class EndScene : MonoBehaviour {
 
     IEnumerator PlayScene()
     {
-        yield return new WaitForSeconds(1.5f);
-        cf.enabled = false;
         yield return new WaitForSeconds(0.5f);
+        cf.enabled = false;
+        yield return new WaitForSeconds(1.0f);
         pc.moving = false;
         anim.SetBool("transform", true);
         int lev = anim.GetInteger("level");
