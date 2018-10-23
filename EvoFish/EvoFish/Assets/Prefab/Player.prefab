@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 4172591412555508}
   - component: {fileID: 50240455130564152}
   - component: {fileID: 61199645822979928}
-  - component: {fileID: 114037533481117108}
   - component: {fileID: 114617622750429222}
   - component: {fileID: 114333244678794452}
   m_Layer: 0
@@ -55,8 +54,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1913255509382864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.98, z: -1.62}
-  m_LocalScale: {x: 5, y: 5, z: 0}
+  m_LocalPosition: {x: -6.73, y: -2, z: -1.62}
+  m_LocalScale: {x: 14, y: 14, z: 0}
   m_Children:
   - {fileID: 4684079867736818}
   m_Father: {fileID: 0}
@@ -94,7 +93,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!61 &61199645822979928
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -129,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 1510991401177284}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ccade4ae4ca11146b60a82bcec73911, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9aaa5e751c828854680b1d4a5fc34f4d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -138,25 +137,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114037533481117108
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1913255509382864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 001c14db0c9f7b44380b8f6cdea2c192, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 95971757169061622}
-  jumpForce: 6
-  runSpeed: 4.5
-  dashMultiplier: 2
-  dashDuration: 0.2
-  dashCooldown: 0.5
-  holdJumpCooldown: 0.2
-  holdMultiplier: 1.5
 --- !u!114 &114333244678794452
 MonoBehaviour:
   m_ObjectHideFlags: 1
