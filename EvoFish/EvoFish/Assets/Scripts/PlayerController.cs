@@ -153,6 +153,7 @@ public class PlayerController : MonoBehaviour
 		{
 			anim.SetBool ("duck", true);
 			Duck (true);
+			Debug.Log ("Duck");
 		}
 		else
 		{
@@ -205,7 +206,7 @@ public class PlayerController : MonoBehaviour
 				evo = 4;
 				break;
 			default:
-				evo = 0;
+				evo = 2;
 				break;
 		}
 	}
