@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 	public float dashCooldown = 0.5f;
 	public float holdJumpCooldown = 0.2f;
 	public float holdMultiplier = 4;
+	public bool moving = true;
 
 	private bool isGrounded;
 
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour
 		playerCollider = gameObject.GetComponent<BoxCollider2D>();
 		defaultSize = playerCollider.size.y;
 		defaultOrigin = playerCollider.offset;
-		Debug.Log(defaultSize + ", " + defaultOrigin);
+		//Debug.Log(defaultSize + ", " + defaultOrigin);
 
 	}
 
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour
 	//set player to grounded to allow them to jump when colliding with floor
 	private void OnCollisionEnter2D(Collision2D col)
 	{
-		Debug.Log("Collided with " + col.gameObject.name);
+		//Debug.Log("Collided with " + col.gameObject.name);
 		if (col.gameObject.tag == "Platform")
 		{
 			anim.SetBool("jump", false);
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour
 	//when character is jumping it will exit collision and no longer be grounded
 	private void OnCollisionExit2D(Collision2D col)
 	{
-		Debug.Log("Jumping");
+		//Debug.Log("Jumping");
 
 		if (col.gameObject.tag == "Platform")
 		{
@@ -167,6 +168,9 @@ public class PlayerController : MonoBehaviour
 	//constantly moving
 	void MoveRight()
 	{
-		playerBody.velocity = new Vector2(runSpeed, playerBody.velocity.y);
+		if (moving == true)
+			playerBody.velocity = new Vector2(runSpeed, playerBody.velocity.y);
+		else
+			playerBody.velocity = new Vector2(0, playerBody.velocity.y);
 	}
 }

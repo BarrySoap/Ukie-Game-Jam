@@ -20,8 +20,8 @@ public class EndZone : MonoBehaviour
 		endCollider = gameObject.GetComponent<BoxCollider2D>();
 		activationTimer = Countdown;
 
-		if (SceneToLoad == null)
-			SceneToLoad = "Dan";
+		if (SceneToLoad == null || SceneToLoad == "")
+			SceneToLoad = SceneManager.GetActiveScene().name.ToString();
 	}
 
 	//get activated by collision
@@ -50,6 +50,9 @@ public class EndZone : MonoBehaviour
 		//if timer runs out 
 		if (activationTimer <= 0)
 		{
+			// if (SceneToLoad == null || SceneToLoad == "")
+			// 	SceneToLoad = SceneManager.GetActiveScene().name.ToString();
+
 			SceneManager.LoadScene(SceneToLoad);
 		}
 	}
