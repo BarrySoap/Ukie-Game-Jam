@@ -11,7 +11,6 @@ public class WorldMaker : MonoBehaviour
     public Transform thorns;
     public Transform bird;
     public Transform cat;
-    public Transform end;
     private Color32 spawn = new Color32(0, 255, 255, 255);
 
     // Upon starting create the world
@@ -21,8 +20,6 @@ public class WorldMaker : MonoBehaviour
         Color32 key = new Color32(0, 127, 14, 255);
         relations.Add(key, thorns);
         // Spawn colour
-        key = new Color32(124, 0, 116, 255);
-        relations.Add(key, end);
 
         MakeWorld();
     }

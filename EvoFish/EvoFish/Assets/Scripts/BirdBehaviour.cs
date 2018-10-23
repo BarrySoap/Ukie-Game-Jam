@@ -3,11 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BirdBehaviour : MonoBehaviour {
-
-    //for Animation
-    [SerializeField]
-    private Animator anim;
-
+    
     private float _cycleTimer = 0;
     private bool _detected = false;
     private float _diffDisty = 0;
@@ -31,7 +27,6 @@ public class BirdBehaviour : MonoBehaviour {
             _detected = false;
         }
         if (_detected) {
-            anim.SetBool("attack", true);
             _cycleTimer += Time.deltaTime;
             transform.Translate(-1.0f * Time.deltaTime, 0.0f, 0.0f);
             Vector3 swoop = transform.position;
