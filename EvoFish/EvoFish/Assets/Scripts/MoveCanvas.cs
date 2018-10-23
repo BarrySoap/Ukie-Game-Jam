@@ -22,6 +22,6 @@ public class MoveCanvas : MonoBehaviour
         m_height = m_MainCamera.pixelHeight - (m_MainCamera.pixelHeight / 8);
 
         GameObject.Find("ControlsBorder").transform.position = new Vector3(m_width, m_height, 0.0f);
-        GameObject.Find("Level1").transform.position = new Vector3(m_width, m_height, 0.0f);
+        GameObject.Find("TutText").transform.position = new Vector3(m_width, m_height, 0.0f);
     }
 }

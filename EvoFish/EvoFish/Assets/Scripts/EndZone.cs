@@ -24,11 +24,12 @@ public class EndZone : MonoBehaviour
         activationTimer = Countdown;
 
         if (SceneToLoad == null || SceneToLoad == "")
+        {
             SceneToLoad = SceneManager.GetActiveScene().name.ToString();
-        if (SceneManager.GetActiveScene().name == "Level1")
+        }else if (SceneManager.GetActiveScene().name == "Level1")
         {
             // Change to say level 2 --------------------------------
-            SceneToLoad = "Level1";
+            SceneToLoad = "Level2";
         }
     }
 
@@ -41,6 +42,26 @@ public class EndZone : MonoBehaviour
             anim.SetBool("victory", true);
         }
         activated = true;
+    }
+    
+    public void Level1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+
+    public void Level3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
+
+    public void Level4()
+    {
+        SceneManager.LoadScene("Level 4");
     }
 
     public void InstantSwitch()

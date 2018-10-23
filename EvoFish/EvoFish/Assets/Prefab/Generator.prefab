@@ -59,7 +59,7 @@ MonoBehaviour:
   cactuss: {fileID: 4393349585757186, guid: 5d02de81ee85d60438ba4e5b153651b4, type: 2}
   cactusl: {fileID: 4902481991736764, guid: 81601f8d10f6fec419bd2d6a9bc233bf, type: 2}
   ant: {fileID: 4310193098877798, guid: 0db846b3d1b65cd419a080612033c591, type: 2}
-  mole: {fileID: 4778647506614578, guid: 60390d428d8ae5d4ea975a88097358a2, type: 2}
-  bird: {fileID: 4843092942557430, guid: 4d1d02bd52ba9a840b3e10fa3f685672, type: 2}
+  mole: {fileID: 4931170058559322, guid: 60390d428d8ae5d4ea975a88097358a2, type: 2}
+  bird: {fileID: 4188437331240526, guid: 4d1d02bd52ba9a840b3e10fa3f685672, type: 2}
   cat: {fileID: 4154826899874012, guid: bdd1a1921890b8244b59d8dbd5f450d8, type: 2}
   end: {fileID: 4244921150502976, guid: 14039a94c89389342a7f6b6b86acb6ba, type: 2}
