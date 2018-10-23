@@ -40,8 +40,13 @@ public class PlayerController : MonoBehaviour
 		defaultSize = playerCollider.size.y;
 		defaultOrigin = playerCollider.offset;
 
-		LevelCheck ();
-		anim.SetInteger ("level", evo - 1);
+		//if in title scene set anim mode manually
+		if (SceneManager.GetActiveScene ().name != "TitleScene")
+		{
+			LevelCheck ();
+			anim.SetInteger ("level", evo - 1);
+		}
+
 		//Debug.Log(defaultSize + ", " + defaultOrigin);
 
 	}
