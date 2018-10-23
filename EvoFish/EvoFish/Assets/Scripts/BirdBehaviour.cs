@@ -31,7 +31,7 @@ public class BirdBehaviour : MonoBehaviour
 
         if (_diffDistx <= 5.0f && !_detected && player.GetComponent<PlayerController>().isGrounded)
         {
-            _diffDisty = Mathf.Abs(player.transform.position.y -2.0f  - gameObject.transform.position.y);
+            _diffDisty = Mathf.Abs(player.transform.position.y + 1.5f  - gameObject.transform.position.y);
 
             _detected = true;
         }
@@ -48,7 +48,6 @@ public class BirdBehaviour : MonoBehaviour
             Vector3 swoop = transform.position;
             swoop.y = _pos + ((Mathf.Cos(_cycleTimer * Mathf.PI / time) - 1) / 2) * _diffDisty;
             transform.position = swoop;
-            _detected = false;
         }
     }
 }
