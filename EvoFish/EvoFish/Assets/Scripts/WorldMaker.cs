@@ -8,7 +8,12 @@ public class WorldMaker : MonoBehaviour
     public Dictionary<Color32, Transform> relations = new Dictionary<Color32, Transform>();
     public Texture2D world;
     public Transform player;
-    public Transform thorns;
+    public Transform thornss;
+    public Transform thornsl;
+    public Transform cactuss;
+    public Transform cactusl;
+    public Transform ant;
+    public Transform mole;
     public Transform bird;
     public Transform cat;
     public Transform end;
@@ -17,12 +22,34 @@ public class WorldMaker : MonoBehaviour
     // Upon starting create the world
     void Start()
     {
-        // Thorn colour
+        // Thorn(s) colour
         Color32 key = new Color32(0, 127, 14, 255);
-        relations.Add(key, thorns);
-        // Spawn colour
+        relations.Add(key, thornss);
+        // Thorn(l) colour
+        key = new Color32(0, 91, 9, 255);
+        relations.Add(key, thornsl);
+        // Cactus (s) colour
+        key = new Color32(0, 198, 19, 255);
+        relations.Add(key, cactuss);
+        // Cactus(l) colour
+        key = new Color32(0, 211, 21, 255);
+        relations.Add(key, cactusl);
+        // Ant colour
+        key = new Color32(226, 93, 56, 255);
+        relations.Add(key, ant);
+        // Mole colour
+        key = new Color32(140, 92, 44, 255);
+        relations.Add(key, mole);
+        // Bird colour
+        key = new Color32(132, 165, 165, 255);
+        relations.Add(key, bird);
+        // Cat colour
+        key = new Color32(255, 131, 0, 255);
+        relations.Add(key, cat);
+        // end colour
         key = new Color32(124, 0, 116, 255);
         relations.Add(key, end);
+        // End
 
         MakeWorld();
     }
