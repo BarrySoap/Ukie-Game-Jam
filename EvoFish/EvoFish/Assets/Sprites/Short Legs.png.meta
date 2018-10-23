@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 76263c2c3d6cb3e4da6640b77c4168ac
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fish_blob
+    21300002: fish_stand
+    21300004: fish_float
+    21300006: Short Legs_nubs
+    21300008: Short Legs_stubs
+    21300010: Short Legs_stand
+    21300012: Short Legs_walk_1
+    21300014: Short Legs_walk_2
+    21300016: Short Legs_walk_3
+    21300018: Short Legs_walk_4
+    21300020: Short Legs_walk_5
+    21300022: Short Legs_dead_1
+    21300024: Short Legs_dead_2
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fish_blob
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 46
+        width: 634
+        height: 314
+      alignment: 9
+      pivot: {x: 0.44948012, y: 0.0070348363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361f7563496411549bfb2627e8ff95b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_stand
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 36
+        width: 523
+        height: 452
+      alignment: 9
+      pivot: {x: 0.4024789, y: 0.0021699297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c3dbd32e3b4f145a29a8f8d7e6ef0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fish_float
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 132
+        width: 369
+        height: 408
+      alignment: 9
+      pivot: {x: 0.42517155, y: 0.005414065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a65d0d799418f14da83cffca2be1e03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_nubs
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 48
+        width: 352
+        height: 496
+      alignment: 9
+      pivot: {x: 0.4466591, y: 0.02004082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de9a161575a32e4a8b038d4739eadf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_stubs
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 54
+        width: 354
+        height: 493
+      alignment: 9
+      pivot: {x: 0.43448067, y: 0.01344177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13246e58b5d4bae499ef2b3d614a7e5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_stand
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 50
+        width: 345
+        height: 507
+      alignment: 9
+      pivot: {x: 0.45518073, y: 0.0065352987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fe113e4fdd8c1489a27e8d55b29992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_walk_1
+      rect:
+        serializedVersion: 2
+        x: 3137
+        y: 51
+        width: 351
+        height: 480
+      alignment: 9
+      pivot: {x: 0.47482708, y: 0.0046018916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c010a91910386ed4e85c170bab82fe13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_walk_2
+      rect:
+        serializedVersion: 2
+        x: 3542
+        y: 40
+        width: 379
+        height: 482
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3e66aa6701e9e47b9457d488816d80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_walk_3
+      rect:
+        serializedVersion: 2
+        x: 3962
+        y: 48
+        width: 377
+        height: 512
+      alignment: 9
+      pivot: {x: 0.4765625, y: 0.000000059604645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7460f7b7a3cc11489d7ac5ea7456f83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_walk_4
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 46
+        width: 350
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93107b2893b02f489e1cbc01ba48ef6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_walk_5
+      rect:
+        serializedVersion: 2
+        x: 4774
+        y: 42
+        width: 349
+        height: 495
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179a7fbfd4f54d545b55e2631a1c96e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_dead_1
+      rect:
+        serializedVersion: 2
+        x: 5210
+        y: 60
+        width: 526
+        height: 515
+      alignment: 9
+      pivot: {x: 0.6742793, y: 0.0021446005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e129fedcc55b0f648903fc7d54093041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Legs_dead_2
+      rect:
+        serializedVersion: 2
+        x: 5834
+        y: 42
+        width: 552
+        height: 298
+      alignment: 9
+      pivot: {x: 0.8361427, y: 0.0074125715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3015c2b4ebf897543936d33a04ff802c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0ebf116f45f76354eaadf4a605918a02
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
