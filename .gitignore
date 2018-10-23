@@ -41,3 +41,5 @@ ehthumbs.db
 EvoFish/EvoFish/Library/EditorInstance.json
 EvoFish/EvoFish/Library/shadercompiler-UnityShaderCompiler.exe0.log
 EvoFish/EvoFish/Library/CrashedAssetImports.txt
+
+*.log
