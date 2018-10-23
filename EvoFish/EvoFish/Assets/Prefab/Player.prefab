@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 61199645822979928}
   - component: {fileID: 114617622750429222}
   - component: {fileID: 114333244678794452}
+  - component: {fileID: 114773864474183642}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -55,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1913255509382864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.73, y: -2, z: -1.62}
-  m_LocalScale: {x: 14, y: 14, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 0}
   m_Children:
   - {fileID: 4684079867736818}
   m_Father: {fileID: 0}
@@ -93,7 +94,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!61 &61199645822979928
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -159,6 +160,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b5af5f80cfe2c4c9c32eb28b4970d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114773864474183642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1913255509382864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001c14db0c9f7b44380b8f6cdea2c192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95149645631725052, guid: 8858936feabd1754ca1e421f1cfb5a9f, type: 2}
+  jumpForce: 6
+  runSpeed: 4.5
+  dashMultiplier: 2
+  dashDuration: 0.2
+  dashCooldown: 0.5
+  holdJumpCooldown: 0.2
+  holdMultiplier: 1.5
+  moving: 1
 --- !u!212 &212963483871746012
 SpriteRenderer:
   m_ObjectHideFlags: 1
