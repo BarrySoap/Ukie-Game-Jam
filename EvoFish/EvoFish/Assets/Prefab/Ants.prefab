@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212574760551387862}
   - component: {fileID: 61955788239586524}
   - component: {fileID: 95715120275383996}
+  - component: {fileID: 114505746898692628}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -80,7 +81,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.2018733}
@@ -114,6 +115,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114505746898692628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101044154085016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cc24fc6def9104484120cbba9190ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Countdown: 1
+  SceneToLoad: 
 --- !u!212 &212574760551387862
 SpriteRenderer:
   m_ObjectHideFlags: 1

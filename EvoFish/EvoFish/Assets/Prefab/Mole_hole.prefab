@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 95681652830240134}
   - component: {fileID: 61467311370950048}
   - component: {fileID: 114916333501259856}
+  - component: {fileID: 114751202276120262}
   m_Layer: 0
   m_Name: Mole_hole
   m_TagString: Untagged
@@ -81,7 +82,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07397956, y: 0.42802072}
@@ -115,6 +116,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114751202276120262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585016360625092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cc24fc6def9104484120cbba9190ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Countdown: 1
+  SceneToLoad: 
 --- !u!114 &114916333501259856
 MonoBehaviour:
   m_ObjectHideFlags: 1
