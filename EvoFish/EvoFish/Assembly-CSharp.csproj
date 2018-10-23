@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\CatBehaviour.cs" />
      <Compile Include="Assets\Scripts\CheckCollEnemy.cs" />
      <Compile Include="Assets\Scripts\CheckObstacle.cs" />
+     <Compile Include="Assets\Scripts\EndScene.cs" />
      <Compile Include="Assets\Scripts\EndZone.cs" />
      <Compile Include="Assets\Scripts\Gradient.cs" />
      <Compile Include="Assets\Scripts\GroundBlock.cs" />

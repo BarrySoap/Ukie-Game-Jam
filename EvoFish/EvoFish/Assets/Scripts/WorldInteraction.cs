@@ -20,7 +20,9 @@ public class WorldInteraction : MonoBehaviour
 			//col.gameObject.SendMessage("Activate");
 			EndZone e = col.gameObject.GetComponent<EndZone>();
 			e.Activate();
-		}
+            EndScene e2 = gameObject.GetComponent<EndScene>();
+            e2.Activate();
+        }
 
 		//hit by enemy/obstacle
 		if (col.gameObject.tag == "Obstacle")

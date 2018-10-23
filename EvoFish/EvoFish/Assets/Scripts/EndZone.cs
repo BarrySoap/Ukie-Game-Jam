@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class EndZone : MonoBehaviour
 {
+    //For Animation
+    [SerializeField]
+    private Animator anim;
 
     public float Countdown;
     public string SceneToLoad;
@@ -33,6 +36,7 @@ public class EndZone : MonoBehaviour
     public void Activate()
     {
         Debug.Log("Activate");
+        anim.SetBool("victory", true);
         activated = true;
     }
 
