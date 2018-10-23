@@ -830,68 +830,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 212970226026277238, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: 55652275
-      objectReference: {fileID: 0}
-    - target: {fileID: 212970226026277238, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 212970226026277238, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300004, guid: 710840a6f63fb5447bec9a1e8adab8e9,
-        type: 3}
-    - target: {fileID: 212970226026277238, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212970226026277238, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212970226026277238, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114945912482675746, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-        type: 2}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 1754683479}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d1d02bd52ba9a840b3e10fa3f685672, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1754683478 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1461796192624752, guid: 4d1d02bd52ba9a840b3e10fa3f685672,
-    type: 2}
-  m_PrefabInternal: {fileID: 1754683477}
---- !u!95 &1754683479
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1754683478}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae52fb8c7f97df943b704c3cc43485c8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &1770331489 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95971757169061622, guid: d2afa0a223aa4e845a1cd4b68667e8a2,
@@ -907,6 +848,8 @@ GameObject:
   - component: {fileID: 1822489368}
   - component: {fileID: 1822489367}
   - component: {fileID: 1822489366}
+  - component: {fileID: 1822489369}
+  - component: {fileID: 1822489370}
   m_Layer: 0
   m_Name: Mole_hole
   m_TagString: Untagged
@@ -991,6 +934,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1822489369
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822489365}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.097920895, y: 0.95472825}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.47202262, y: 0.010395735}
+    oldSize: {x: 3.5, y: 1.95}
+    newSize: {x: 3.5, y: 1.95}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 1.95}
+  m_EdgeRadius: 0
+--- !u!114 &1822489370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822489365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 104c4ad8ca71c7e4589b8ddb7c8087d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1822489366}
 --- !u!1001 &1924435615
 Prefab:
   m_ObjectHideFlags: 0
