@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 	public float holdMultiplier = 4;
 	public bool moving = true;
 
-	private bool isGrounded;
+	public bool isGrounded;
 
 	private float dashTimer = 0;
 	private float holdJumpTimer = 0;

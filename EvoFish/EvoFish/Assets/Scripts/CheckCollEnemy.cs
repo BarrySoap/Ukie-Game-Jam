@@ -10,7 +10,6 @@ public class CheckCollEnemy : MonoBehaviour {
         if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Platform")
         {
             Vector3 pos = gameObject.transform.position;
-            GameObject.Find("Cat").GetComponent<CatBehaviour>().SetPos(pos);
         }
     }
 
