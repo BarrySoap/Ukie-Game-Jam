@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1497082566719008}
+  m_IsPrefabAsset: 1
+--- !u!1 &1497082566719008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4693519098600868}
+  - component: {fileID: 114579112015486164}
+  m_Layer: 0
+  m_Name: Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4693519098600868
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1497082566719008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.621096, y: -0.39913505, z: -0.0771271}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114579112015486164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1497082566719008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ed5e5d4625997449cefb55c0c80491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridScale: 0.5
+  world: {fileID: 2800000, guid: a73b41d6720a06e4db33fff81dcc47c0, type: 3}
+  player: {fileID: 0}
+  thornss: {fileID: 4447123449110284, guid: eec26d28786a6ca4e9f96e59652f35c0, type: 2}
+  thornsl: {fileID: 4339333105713220, guid: 6def4d0d0d54f1a40af0bd9b27fa6fd8, type: 2}
+  cactuss: {fileID: 4393349585757186, guid: 5d02de81ee85d60438ba4e5b153651b4, type: 2}
+  cactusl: {fileID: 4902481991736764, guid: 81601f8d10f6fec419bd2d6a9bc233bf, type: 2}
+  ant: {fileID: 4310193098877798, guid: 0db846b3d1b65cd419a080612033c591, type: 2}
+  mole: {fileID: 4778647506614578, guid: 60390d428d8ae5d4ea975a88097358a2, type: 2}
+  bird: {fileID: 4843092942557430, guid: 4d1d02bd52ba9a840b3e10fa3f685672, type: 2}
+  cat: {fileID: 4154826899874012, guid: bdd1a1921890b8244b59d8dbd5f450d8, type: 2}
+  end: {fileID: 4244921150502976, guid: 14039a94c89389342a7f6b6b86acb6ba, type: 2}
