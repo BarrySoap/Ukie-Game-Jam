@@ -26,7 +26,28 @@ public class EndZone : MonoBehaviour
         if (SceneToLoad == null || SceneToLoad == "")
         {
             SceneToLoad = SceneManager.GetActiveScene().name.ToString();
-        }else if (SceneManager.GetActiveScene().name == "Level1")
+        }
+        else if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            // Change to say level 2 --------------------------------
+            SceneToLoad = "Level2";
+        }
+        else if (SceneManager.GetActiveScene().name == "Level2")
+        {
+            // Change to say level 2 --------------------------------
+            SceneToLoad = "Level3";
+        }
+        else if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            // Change to say level 2 --------------------------------
+            SceneToLoad = "Level 4";
+        }
+        else if (SceneManager.GetActiveScene().name == "Level 4")
+        {
+            // Change to say level 2 --------------------------------
+            SceneToLoad = "Victory";
+        }
+        else if (SceneManager.GetActiveScene().name == "Level1")
         {
             // Change to say level 2 --------------------------------
             SceneToLoad = "Level2";
