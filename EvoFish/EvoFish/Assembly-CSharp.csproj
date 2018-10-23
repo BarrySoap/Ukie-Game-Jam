@@ -58,10 +58,15 @@
      <Compile Include="Assets\Scripts\CatBehaviour.cs" />
      <Compile Include="Assets\Scripts\CheckCollEnemy.cs" />
      <Compile Include="Assets\Scripts\CheckObstacle.cs" />
+     <Compile Include="Assets\Scripts\EndScene.cs" />
      <Compile Include="Assets\Scripts\EndZone.cs" />
      <Compile Include="Assets\Scripts\Gradient.cs" />
      <Compile Include="Assets\Scripts\GroundBlock.cs" />
+     <Compile Include="Assets\Scripts\MoleBehaviour.cs" />
+     <Compile Include="Assets\Scripts\MoveCanvas.cs" />
      <Compile Include="Assets\Scripts\MoveCube.cs" />
+     <Compile Include="Assets\Scripts\MoveGround.cs" />
+     <Compile Include="Assets\Scripts\Parallax.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\WorldInteraction.cs" />
      <Compile Include="Assets\Scripts\WorldMaker.cs" />
