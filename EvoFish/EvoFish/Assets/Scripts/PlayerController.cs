@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField]
 	private float jumpForce = 10;
 	[SerializeField]
-	private float runSpeed = 20;
+	public float runSpeed = 20;
 
 	public float dashMultiplier = 2;
 	public float dashDuration = 1;
