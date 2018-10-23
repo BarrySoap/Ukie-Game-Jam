@@ -15,28 +15,48 @@ public class EndZone : MonoBehaviour
 	private BoxCollider2D endCollider;
 
 	// Use this for initialization
-	void Start()
+	void Start ()
 	{
-		endCollider = gameObject.GetComponent<BoxCollider2D>();
+		endCollider = gameObject.GetComponent<BoxCollider2D> ();
 		activationTimer = Countdown;
 
 		if (SceneToLoad == null || SceneToLoad == "")
-			SceneToLoad = SceneManager.GetActiveScene().name.ToString();
+			SceneToLoad = SceneManager.GetActiveScene ().name.ToString ();
 	}
 
 	//get activated by collision
-	public void Activate()
+	public void Activate ()
 	{
-		Debug.Log("Activate");
+		Debug.Log ("Activate");
 		activated = true;
 	}
 
-	public void InstantSwitch()
+	public void Level1 ()
 	{
-		SceneManager.LoadScene(SceneToLoad);
+		SceneManager.LoadScene ("Level1");
 	}
 
-	void Update()
+	public void Level2 ()
+	{
+		SceneManager.LoadScene ("Level2");
+	}
+
+	public void Level3 ()
+	{
+		SceneManager.LoadScene ("Level3");
+	}
+
+	public void Level4 ()
+	{
+		SceneManager.LoadScene ("Level4");
+	}
+
+	public void InstantSwitch ()
+	{
+		SceneManager.LoadScene (SceneToLoad);
+	}
+
+	void Update ()
 	{
 		//decrement the timer if activated.
 		if (activated)
@@ -53,7 +73,7 @@ public class EndZone : MonoBehaviour
 			// if (SceneToLoad == null || SceneToLoad == "")
 			// 	SceneToLoad = SceneManager.GetActiveScene().name.ToString();
 
-			SceneManager.LoadScene(SceneToLoad);
+			SceneManager.LoadScene (SceneToLoad);
 		}
 	}
 }
